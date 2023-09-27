@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <p class="display"></p>
+        <div class="container">
+        
+            <button class="btn con" onclick="
+            calculation='';
+            document.querySelector('.display').innerHTML=calculation;
+            
+            ">AC</button>
+            <button class="btn con" onclick="
+            last()">DE</button>
+            <button id="c3" class="btn con" onclick="
+            key('%');
+            ">%</button>
+            <button id="c4" class="btn dif" onclick="
+            key('/');
+            ">/</button>
+            
+            <button id="5" onclick="
+            key('7');
+            ">7</button>
+            <button id="6" onclick="
+            key('8');
+            ">8</button>
+            <button id="7" onclick="
+            key('9');
+            ">9</button>
+            <button class="dif" onclick="
+            key('*');
+            ">*</button>
+            <button id="9" onclick="
+            key('4');
+            ">4</button>
+            <button id="10" onclick="
+            key('5');
+            ">5</button>
+            <button id="11" onclick="
+            key('6');
+            ">6</button>
+            <button class="dif" onclick="
+            key('+');
+            ">+</button>
+            <button id="c13" onclick="
+            key('1');
+            ">1</button>
+            <button id="14" onclick="
+            key('2');
+            ">2</button>
+            <button id="c15" onclick="
+            key('3');
+            " >3</button>
+            <button class="dif" onclick="
+            key('-');
+            " >-</button>
+            <button id="17" onclick="
+            key('00');
+            ">00</button>
+            <button id="18" onclick="
+            key('0');
+            ">0</button>
+            <button onclick="
+            key('.');
+            " >.</button>
+            <button class="dif" onclick="
+            
+            calculation=eval(calculation);
+            document.querySelector('.display').innerHTML=calculation;
+            ">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+    
+</body>
+</html>
